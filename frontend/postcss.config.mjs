@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'standalone',
+const config = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };
 
-export default nextConfig;
+export default config;
