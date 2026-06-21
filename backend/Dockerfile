@@ -23,12 +23,8 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy application code
 COPY . .
 
-# Expose port
-EXPOSE 8000
+# Expose port (Railway overrides with $PORT)
+EXPOSE 8080
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=20s --retries=3 \
-    CMD curl -f http://localhost:8000/health || exit 1
-
-# Start server
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+# Start server — Railway injects $PORT dynamically
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1
