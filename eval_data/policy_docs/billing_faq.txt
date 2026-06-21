@@ -1,0 +1,25 @@
+DATAWEBIFY BILLING FAQ
+
+Q: When is my billing cycle?
+A: Billing cycles run monthly from the date of your subscription start. For example, if you subscribed on the 15th, you are billed on the 15th of each month.
+
+Q: What payment methods are accepted?
+A: We accept Visa, MasterCard, American Express, and PayPal. Bank transfers are available for annual enterprise contracts only.
+
+Q: How do I update my payment method?
+A: Payment methods can be updated in the Account Settings section of your dashboard. Changes take effect on the next billing cycle.
+
+Q: Why was I charged twice?
+A: Duplicate charges can occur due to a payment processor error. If you see two identical charges for the same period, contact support immediately. We will verify and issue a refund for the duplicate charge within 5 to 7 business days.
+
+Q: Can I get an invoice for my records?
+A: Yes. All invoices are available in the Billing section of your account dashboard. You can download PDF copies of any invoice from the past 24 months.
+
+Q: What happens if my payment fails?
+A: If a payment fails, we will retry the charge after 3 days and again after 7 days. If the payment is not resolved within 14 days, your account will be suspended. You will receive email notifications at each retry attempt.
+
+Q: Can I pause my subscription instead of cancelling?
+A: Subscription pausing is available on Professional and Enterprise plans for up to 3 months per year. Contact support to request a pause.
+
+Q: Are there any hidden fees?
+A: No. The price shown at checkout is the price you pay. Taxes may apply depending on your location.

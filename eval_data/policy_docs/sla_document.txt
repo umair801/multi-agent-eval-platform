@@ -1,0 +1,26 @@
+DATAWEBIFY SERVICE LEVEL AGREEMENT — Version 1.4
+
+1. UPTIME COMMITMENT
+Datawebify commits to 99.9% monthly uptime for all production services. Scheduled maintenance windows are excluded from uptime calculations. Customers will receive 48 hours advance notice for scheduled maintenance.
+
+2. SUPPORT RESPONSE TIMES
+Priority 1 (Service Down): Response within 1 hour, resolution target 4 hours.
+Priority 2 (Major Feature Impaired): Response within 4 hours, resolution target 24 hours.
+Priority 3 (Minor Issue): Response within 1 business day, resolution target 5 business days.
+Priority 4 (General Inquiry): Response within 2 business days.
+
+3. SLA CREDITS
+If uptime falls below 99.9% in any calendar month, affected customers are eligible for SLA credits as follows:
+- 99.0% to 99.9% uptime: 10% credit of monthly fee
+- 95.0% to 99.0% uptime: 25% credit of monthly fee
+- Below 95.0% uptime: 50% credit of monthly fee
+Credits are applied to the next billing cycle and are not redeemable for cash.
+
+4. ESCALATION PROCESS
+Customer escalations can be initiated by contacting support with the word ESCALATE in the subject or message. Escalated tickets are reviewed by a senior support manager within 2 business hours. Customers will receive a direct callback or email from the manager assigned to their case.
+
+5. EXCLUSIONS
+SLA commitments do not cover outages caused by: customer-side network failures, third-party service outages outside Datawebify's control, force majeure events, or actions taken by the customer that violate the terms of service.
+
+6. ENTERPRISE SLA
+Enterprise customers on annual contracts are eligible for custom SLA terms with higher uptime commitments and dedicated support channels. Contact your account manager for details.

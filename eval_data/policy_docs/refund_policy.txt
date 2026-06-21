@@ -1,0 +1,19 @@
+DATAWEBIFY REFUND POLICY — Version 2.1
+
+1. ELIGIBILITY
+Customers are eligible for a full refund within 30 days of the original purchase date, provided the service has not been used beyond the trial limits. Refunds requested after 30 days are not eligible unless a duplicate charge or billing error is confirmed.
+
+2. DUPLICATE CHARGES
+If a customer has been charged more than once for the same billing period, a full refund of the duplicate amount will be issued within 5 to 7 business days. The customer must provide the invoice number and transaction date for both charges.
+
+3. REFUND PROCESS
+To initiate a refund, a refund ticket must be created by a support agent. The ticket is reviewed within 2 business days. Approved refunds are credited to the original payment method within 5 to 7 business days. Refunds cannot be issued to a different payment method than the one originally charged.
+
+4. NON-REFUNDABLE ITEMS
+Setup fees, onboarding fees, and custom integration fees are non-refundable. Partial months of service are not refundable after the 30-day window.
+
+5. EXCEPTIONS
+Refunds outside the standard policy may be approved at the discretion of a senior support manager. These exceptions require escalation to a human agent and are documented with justification.
+
+6. CANCELLATION
+Customers who cancel within the 30-day window receive a full refund. Customers who cancel after 30 days will not be charged for the next billing cycle but will not receive a refund for the current period.

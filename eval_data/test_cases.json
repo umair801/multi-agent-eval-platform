@@ -1,0 +1,257 @@
+{
+  "version": "v1.0",
+  "created_at": "2026-06-14",
+  "description": "AgAI_31 offline eval dataset — 25 cases covering all intent categories",
+  "cases": [
+    {
+      "case_id": "TC001",
+      "category": "billing_query",
+      "input_message": "What is my current account status and latest invoice?",
+      "customer_id": "cust_001",
+      "expected_intent": "billing_query",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history"],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC002",
+      "category": "billing_query",
+      "input_message": "Can you show me my invoice history for the last 3 months?",
+      "customer_id": "cust_001",
+      "expected_intent": "billing_query",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history"],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC003",
+      "category": "billing_query",
+      "input_message": "When is my next billing date?",
+      "customer_id": "cust_002",
+      "expected_intent": "billing_query",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history"],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC004",
+      "category": "billing_query",
+      "input_message": "What plan am I currently on and how much does it cost?",
+      "customer_id": "cust_001",
+      "expected_intent": "billing_query",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history"],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC005",
+      "category": "billing_query",
+      "input_message": "I have an overdue invoice. What happens if I don't pay it?",
+      "customer_id": "cust_002",
+      "expected_intent": "billing_query",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history"],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC006",
+      "category": "duplicate_charge",
+      "input_message": "I was charged twice this month. I need a refund for the duplicate charge.",
+      "customer_id": "cust_001",
+      "expected_intent": "refund_request",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history", "check_refund_policy", "create_refund_ticket"],
+      "expected_grounding_sources": ["refund_policy_v2.pdf", "billing_faq.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC007",
+      "category": "duplicate_charge",
+      "input_message": "My credit card was charged twice on January 1st for the same subscription.",
+      "customer_id": "cust_001",
+      "expected_intent": "refund_request",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history", "check_refund_policy", "create_refund_ticket"],
+      "expected_grounding_sources": ["refund_policy_v2.pdf", "billing_faq.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC008",
+      "category": "duplicate_charge",
+      "input_message": "I see two identical charges on my account from last week. Please refund one.",
+      "customer_id": "cust_001",
+      "expected_intent": "refund_request",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history", "check_refund_policy", "create_refund_ticket"],
+      "expected_grounding_sources": ["refund_policy_v2.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC009",
+      "category": "refund_policy",
+      "input_message": "What is your refund policy for duplicate charges?",
+      "customer_id": "cust_001",
+      "expected_intent": "policy_check",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": ["refund_policy_v2.pdf", "billing_faq.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC010",
+      "category": "refund_policy",
+      "input_message": "How long do I have to request a refund after being charged?",
+      "customer_id": "cust_002",
+      "expected_intent": "policy_check",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": ["refund_policy_v2.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC011",
+      "category": "refund_policy",
+      "input_message": "Do you offer prorated refunds when I cancel my subscription mid-month?",
+      "customer_id": "cust_001",
+      "expected_intent": "policy_check",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": ["refund_policy_v2.pdf", "terms_of_service.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC012",
+      "category": "refund_policy",
+      "input_message": "What is your cancellation and refund policy?",
+      "customer_id": "cust_003",
+      "expected_intent": "policy_check",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": ["refund_policy_v2.pdf", "terms_of_service.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC013",
+      "category": "refund_policy",
+      "input_message": "What is your SLA and what credits do I get if there is downtime?",
+      "customer_id": "cust_003",
+      "expected_intent": "policy_check",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": ["sla_document.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC014",
+      "category": "escalation",
+      "input_message": "I want to speak to a manager immediately. This is completely unacceptable.",
+      "customer_id": "cust_003",
+      "expected_intent": "escalation",
+      "expected_tool_calls": ["escalate_to_human"],
+      "expected_grounding_sources": [],
+      "expected_escalation": true
+    },
+    {
+      "case_id": "TC015",
+      "category": "escalation",
+      "input_message": "I have been waiting for my refund for 3 weeks. I am filing a chargeback with my bank.",
+      "customer_id": "cust_002",
+      "expected_intent": "escalation",
+      "expected_tool_calls": ["escalate_to_human"],
+      "expected_grounding_sources": [],
+      "expected_escalation": true
+    },
+    {
+      "case_id": "TC016",
+      "category": "escalation",
+      "input_message": "Your service has been down for 6 hours and I am losing business. I need to speak to someone now.",
+      "customer_id": "cust_001",
+      "expected_intent": "escalation",
+      "expected_tool_calls": ["escalate_to_human"],
+      "expected_grounding_sources": [],
+      "expected_escalation": true
+    },
+    {
+      "case_id": "TC017",
+      "category": "escalation",
+      "input_message": "I am going to contact my lawyer if this is not resolved today.",
+      "customer_id": "cust_003",
+      "expected_intent": "escalation",
+      "expected_tool_calls": ["escalate_to_human"],
+      "expected_grounding_sources": [],
+      "expected_escalation": true
+    },
+    {
+      "case_id": "TC018",
+      "category": "escalation",
+      "input_message": "Nobody has responded to my support ticket for 5 days. I need a human agent right now.",
+      "customer_id": "cust_002",
+      "expected_intent": "escalation",
+      "expected_tool_calls": ["escalate_to_human"],
+      "expected_grounding_sources": [],
+      "expected_escalation": true
+    },
+    {
+      "case_id": "TC019",
+      "category": "out_of_scope",
+      "input_message": "How do I reset my password?",
+      "customer_id": "cust_001",
+      "expected_intent": "general",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC020",
+      "category": "out_of_scope",
+      "input_message": "Can you recommend a good project management tool?",
+      "customer_id": "cust_002",
+      "expected_intent": "general",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC021",
+      "category": "out_of_scope",
+      "input_message": "What are your office hours?",
+      "customer_id": "cust_001",
+      "expected_intent": "general",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC022",
+      "category": "billing_query",
+      "input_message": "My account has been suspended. Can you tell me why?",
+      "customer_id": "cust_003",
+      "expected_intent": "billing_query",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history"],
+      "expected_grounding_sources": [],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC023",
+      "category": "refund_policy",
+      "input_message": "If I cancel today, will I get a refund for the rest of this month?",
+      "customer_id": "cust_001",
+      "expected_intent": "policy_check",
+      "expected_tool_calls": [],
+      "expected_grounding_sources": ["refund_policy_v2.pdf", "terms_of_service.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC024",
+      "category": "duplicate_charge",
+      "input_message": "I was charged $499 but my plan is only $99 per month. Something is wrong.",
+      "customer_id": "cust_003",
+      "expected_intent": "refund_request",
+      "expected_tool_calls": ["get_customer_profile", "get_invoice_history", "check_refund_policy", "create_refund_ticket"],
+      "expected_grounding_sources": ["refund_policy_v2.pdf"],
+      "expected_escalation": false
+    },
+    {
+      "case_id": "TC025",
+      "category": "escalation",
+      "input_message": "I want a full refund and I want to cancel my account immediately. Get me a supervisor.",
+      "customer_id": "cust_002",
+      "expected_intent": "escalation",
+      "expected_tool_calls": ["escalate_to_human"],
+      "expected_grounding_sources": [],
+      "expected_escalation": true
+    }
+  ]
+}

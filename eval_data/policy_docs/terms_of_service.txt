@@ -1,0 +1,25 @@
+DATAWEBIFY TERMS OF SERVICE — Version 3.0
+
+1. ACCEPTANCE
+By subscribing to Datawebify services, you agree to these Terms of Service. If you do not agree, you may not use the service.
+
+2. PERMITTED USE
+Services may only be used for lawful business purposes. Customers may not resell, sublicense, or redistribute access to Datawebify services without prior written consent.
+
+3. BILLING AND PAYMENT
+All fees are billed in advance on a monthly or annual basis. Prices are subject to change with 30 days written notice. Customers who do not cancel before the price change takes effect are deemed to have accepted the new pricing.
+
+4. DATA OWNERSHIP
+Customer data remains the property of the customer at all times. Datawebify processes customer data solely to deliver the contracted services. Data is not sold or shared with third parties except as required by law.
+
+5. TERMINATION
+Either party may terminate the agreement with 30 days written notice. Datawebify reserves the right to terminate immediately for violation of these terms, including non-payment, abuse, or fraudulent activity.
+
+6. LIMITATION OF LIABILITY
+Datawebify's total liability under this agreement shall not exceed the fees paid by the customer in the 3 months preceding the claim. Datawebify is not liable for indirect, incidental, or consequential damages.
+
+7. DISPUTES
+Disputes must be raised in writing within 60 days of the event giving rise to the claim. Disputes are governed by the laws of the State of Delaware, United States.
+
+8. PRIVACY
+Data handling is governed by the Datawebify Privacy Policy, which is incorporated into these terms by reference.

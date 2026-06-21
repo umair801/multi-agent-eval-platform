@@ -1,0 +1,78 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment variables — NEVER commit these
+.env
+*.env
+!.env.example
+
+# ============================================================
+# Node / Next.js
+# ============================================================
+node_modules/
+.next/
+out/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# ============================================================
+# Eval reports — generated, not source
+# ============================================================
+eval_data/reports/
+
+# ============================================================
+# IDE and OS
+# ============================================================
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Docker
+# ============================================================
+.dockerignore
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+
+# ============================================================
+# Secrets and keys — extra safety
+# ============================================================
+*.pem
+*.key
+*.p12
+secrets/
